@@ -1,0 +1,38 @@
+<div class="headCenter">
+  <app-header></app-header>
+</div>
+
+
+<section class="cards">
+<div *ngFor='let user of users$' class='card'>
+        <div class='card-inner'>
+          <div class='card-front'>
+            <img src="{{ user.img }}" alt='' />
+          </div>
+          <div class='card-back'>
+            <h1>{{user.name}}</h1>
+            <ul>
+              <li>
+                <strong>Actor Name:</strong> {{user.portrayed}}
+              </li>
+              <li>
+                <strong>Nickname:</strong> {{user.nickname}}
+              </li>
+              <li>
+                <strong>Birthday:</strong> {{user.birthday}}
+              </li>
+              <li>
+                <strong>Status:</strong> {{user.status}}
+              </li>
+            </ul>
+          </div>
+        </div>
+</div>
+</section>
+
+
+
+
+
+
+<router-outlet></router-outlet>
