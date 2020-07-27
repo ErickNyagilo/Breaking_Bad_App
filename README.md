@@ -4,7 +4,7 @@ Angular project that uses the breaking bad api to show and filter characters fro
 
 ## Usage
 
-'npm install' for installing all the depedencies
+Run `npm install` for installing all the depedencies
 
 ## Development server
 
